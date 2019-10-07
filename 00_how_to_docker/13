@@ -1,0 +1,1 @@
+docker run --name lair -e WORDPRESS_DB_HOST=hatchery -e WORDPRESS_DB_NAME=zerglings -p $(docker-machine ip Char):8080:80 -d wordpress
