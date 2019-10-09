@@ -1,0 +1,1 @@
+docker run -it --rm --name Abathur -v "$HOME":/ -w / python:3-slim python your-daemon-or-script.py
