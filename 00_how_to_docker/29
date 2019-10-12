@@ -1,0 +1,5 @@
+Display all the tasks of the marines service.
+
+ANS
+
+docker service ps marines

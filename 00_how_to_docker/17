@@ -1,1 +1,5 @@
+Display all the currently active containers on the Char virtual machine.
+
+ANS
+
 docker container ls -a
