@@ -6,4 +6,4 @@ itself is named spawning-pool.
 
 ANS
 
-docker run --restart unless-stopped --name spawning-pool -e MYSQL_ROOT_PASSWORD=Kerrigan -d -v hatchery:/app MYSQL_DATABASE=zerglings mysql:latest
+docker run --restart unless-stopped --name spawning-pool -e MYSQL_ROOT_PASSWORD=Kerrigan -d -v hatchery:/app -e MYSQL_DATABASE=zerglings mysql:5.7

@@ -7,4 +7,4 @@ Congratulations, you just deployed a functional Wordpress website in two command
 
 ANS
 
-docker run --name lair -e WORDPRESS_DB_HOST=hatchery -e WORDPRESS_DB_NAME=zerglings -p $(docker-machine ip Char):8080:80 -d wordpress
+docker run --name lair -p 8080:80 --link spawning-pool:db -d wordpress

@@ -4,4 +4,4 @@ be able to explore the database stored in the spawning-pool container.
 
 ANS
 
-docker run --name roach-warden -d -p $(docker-machine ip Char):8080:80 mysql_db_server:db phpmyadmin/phpmyadmin 
+docker run --name roach-warden -d -p 8081:80 --link spawning-pool:db phpmyadmin/phpmyadmin

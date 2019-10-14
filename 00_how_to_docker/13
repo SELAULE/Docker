@@ -3,4 +3,4 @@ to be sure that you have configured your container properly.
 
 ANS
 
-docker inspect -f '{{ Convig.env}}'
+docker exec spawning-pool bash -c 'echo "$ENV_VAR"'
