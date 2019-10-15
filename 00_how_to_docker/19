@@ -1,2 +1,9 @@
 
-docker run -it --rm --restart unless-stopped --name Abathur -v hatchery/ -p 3000:3000 python:2-slim
+echo "from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def hello_world():
+   return '<h1>Hello, World!</h1>'" >> app.py
+docker run -d -p 3000:3000 --name Abathur -v /home/docker/:/root -e FLASK_APP=app.py -w /root python:2-slim bash -c "pip install flask && flask run -h 0.0.0.0 -p 3000"
+docker cp app.py Abathur:/root
+docker start Abathur

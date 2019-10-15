@@ -3,4 +3,4 @@ to be sure that you have configured your container properly.
 
 ANS
 
-docker exec spawning-pool bash -c 'echo "$ENV_VAR"'
+docker exec spawning-pool env

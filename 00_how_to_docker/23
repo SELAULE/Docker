@@ -2,4 +2,4 @@
 
  ANS
 
-docker network create overlay overmind
+docker network create -d overlay --internal overmind

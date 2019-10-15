@@ -1,6 +1,2 @@
-Turn Aiur into a slave of the local swarm in which Char is leader (the command to
-take control of Aiur is not requested).
 
-ANS
-
-docker swarm join
+docker swarm join --advertise-addr $(docker-machine ip Char)
