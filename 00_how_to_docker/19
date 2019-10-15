@@ -1,2 +1,2 @@
 
-docker run --restart unless-stopped --name Abathur -v hatchery/ -p 3000:3000 python:2-slim
+docker run -it --rm --restart unless-stopped --name Abathur -v hatchery/ -p 3000:3000 python:2-slim
