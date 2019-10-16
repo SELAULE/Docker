@@ -1,2 +1,4 @@
 FROM alpine
-RUN apt-get install vim
+
+RUN apk update
+RUN apk add vim
