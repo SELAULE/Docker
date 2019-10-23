@@ -3,9 +3,5 @@ and name it Aiur.
 
 ANS
 
-Create another virtual machine with docker-machine using the virtualbox driver,
-and name it Aiur.
-
-ANS
 
 docker-machine create --driver virtualbox Aiur

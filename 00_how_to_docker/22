@@ -1,2 +1,7 @@
+Turn Aiur into a slave of the local swarm in which Char is leader (the command to
+take control of Aiur is not requested).
 
-docker swarm join --advertise-addr $(docker-machine ip Char)
+ANS 
+
+
+docker-machine ssh Char & docker swarm join --token $(docker swarm -join-token --quiet worker) $(docker-machine ip Char)
