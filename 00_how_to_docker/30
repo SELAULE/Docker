@@ -4,4 +4,4 @@ and logs of the service, you’ll see, it’s fun.)
 
 ANS
 
-docker service update --replicas 20 Marines
+docker service update --replicas 20 marines

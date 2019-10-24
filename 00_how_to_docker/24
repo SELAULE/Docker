@@ -4,4 +4,4 @@ you want. This service will be on the overmind network.
 
 ANS
 
-docker service create --name orbital-command -e RABBITMQ_DEFAULT_USER=nselaule -e RABBITMQ_DEFAULT_PASS=potato123
+docker service create --name orbital-command -e RABBITMQ_DEFAULT_USER=nselaule -e RABBITMQ_DEFAULT_PASS=potato123 rabbitmq

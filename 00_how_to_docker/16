@@ -2,4 +2,4 @@
 
  ANS
 
-docker logs -f spawning-pool
+docker logs spawning-pool
